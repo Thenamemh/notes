@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primarycolor: #1E1D1D;
+    --secondarycolor : #C1C0C0;
+}
+
+/* HEADER & NAVBAR */
+body{background-color: var(--primarycolor);}
+header{
+    width: 100vw;
+    color: var(--secondarycolor);
+    font-family: 'Poppins',sans-serif;
+}
+
+nav{
+    background-color: var(--primarycolor);
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 2rem;
+}
+
+nav .logo a{
+    font-weight: 800;
+    font-size: .8rem;
+    transition: color .2s ease;
+    text-decoration: none;
+    color: var(--secondarycolor);
+}
+
+nav .logo a:hover{
+    transition: color .6s ease;
+    color: #00AAA9;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type:none;
+    display: flex;
+}
+
+nav ul li{
+    display: flex;
+    padding-left: 1rem;
+    font-weight: 500;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondarycolor);
+    display: flex!important;
+    padding: .2rem;
+    transition: background-color,border .3s ease;
+    font-size: .8rem;
+}
+
+nav ul li a:hover{
+    color: var(--primarycolor);
+    background-color: var(--secondarycolor);
+    border-radius: .5rem;
+    transition: background-color .3s ease;
+}
+
+/* MAIN */
+main{
+    font-family: 'Poppins',sans-serif;
+    width: 100vw;
+    background-color: var(--primarycolor);
+    min-height : 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main >a {
+    display: flex;
+    color: var(--primarycolor);
+    margin: .2rem;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: var(--secondarycolor);
+    padding: 5px 12px;
+    border-radius: 1rem;
+}
+
+main .container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+    align-items: center;
+}
+
+main >h1,main >p{
+    color: var(--secondarycolor);
+    font-size: 1.4rem;
+    margin-left: 2rem;
+}
+
+main .container .folder{
+    display: flex;
+    width: fit-content;
+    background-color: var(--primarycolor);
+    border-radius: 1rem;
+    margin: .5rem; 
+    color: var(--secondarycolor);
+    height: min-content;
+    cursor: default;
+    overflow: hidden;
+    border: .1px solid var(--secondarycolor);
+}
+
+main .container .folder img{
+    object-fit: contain;
+    aspect-ratio: 1/1;
+}
+
+.folder .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondarycolor);
+}
+
+.folder .sub-details {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.folder h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.folder p{
+    font-size: .9rem;
+    margin: .3rem 0;
+}
+
+/* UTILITY CLASSES  */
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--secondarycolor);
+    width: fit-content;
+    padding: .5rem;
+    border-radius: .4rem;
+    transition: all .5s ease;
+    border: 1.7px solid var(--primarycolor);
+}
+
+.btn a{
+    display: flex;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--primarycolor);
+    font-weight: 800;
+    transition: all .5s ease;
+}
+
+.btn:hover{
+    transition: all .5s ease,border .1s ease;
+    background-color: var(--primarycolor);
+    border: 1.7px solid var(--secondarycolor);
+}
+
+.btn:hover a{
+    color: var(--secondarycolor);
+}
+
+.btn img{
+    height: 1.5rem ;
+    margin-right: 1rem;
+}
