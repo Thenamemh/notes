@@ -76,6 +76,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: var(--secondarycolor);
 }
 
 main >a {
@@ -92,15 +93,11 @@ main >a {
 main .container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-left: 1rem;
     align-items: center;
 }
 
-main >h1,main >p{
-    color: var(--secondarycolor);
-    font-size: 1.4rem;
-    margin-left: 2rem;
-}
 
 main .container .folder{
     display: flex;
@@ -142,6 +139,11 @@ main .container .folder img{
 .folder p{
     font-size: .9rem;
     margin: .3rem 0;
+}
+
+.foot{
+    text-align: center;
+    padding: 1rem ;
 }
 
 /* UTILITY CLASSES  */
